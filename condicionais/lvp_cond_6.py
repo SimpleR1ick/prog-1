@@ -7,12 +7,14 @@ e efetue a sua apresentação, caso o valor não seja divisível por três.
 # Função principal
 def main():
     # Variaveis
+    num = int()
 
     # Entrada de dados
-
-    # Procesamento
+    num = int(input())
 
     # Saida de dados
+    if num % 3 != 0:
+        print(num)
 
     return 0
 
