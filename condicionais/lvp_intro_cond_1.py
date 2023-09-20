@@ -1,14 +1,12 @@
+# Função principal
 def main():
-    """_summary_
-
-    Returns:
-        _type_: _description_
-    """
+    # Variaveis
     a = 10
     b = 20
     c = 30
     d = 40
 
+    # Saida de dados
     if c > a:
         if d > c:
             print("s")
