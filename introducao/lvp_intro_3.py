@@ -1,13 +1,12 @@
 def main():
-    # Entrada de dados
-    base = float(input())
-    altura = float(input())
+    # Variaveis
+    num = int()
 
-    # Processamento
-    area = (base * altura) / 2
+    # Entrada de dados
+    num = int(input())
 
     # Saida de dados
-    print(area)
+    print(num - 1)
 
     return 0
 

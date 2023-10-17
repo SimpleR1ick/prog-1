@@ -14,7 +14,9 @@ def main():
 
     # Entrada de dados
     while lendo:
-        if not input().lower() == 's':
+        ler = input().lower()
+
+        if ler != 's':
             lendo = False
         else:
             soma += float(input())

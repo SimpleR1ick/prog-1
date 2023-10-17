@@ -5,13 +5,11 @@ Faça um Algoritmo que escreva na tela os números de 0 até 9.
 
 # Função principal
 def main():
-    # Variaveis
-    i = int(0)
-
     # Saida de dados
-    while i < 10:
-        print(i)
-        i += 1 # i = i + 1
+    for i in range(0, 11):
+        # Verifica se o número e par
+        if i % 2 == 0:
+            print(i)
 
     return 0
 
