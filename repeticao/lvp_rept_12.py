@@ -13,6 +13,7 @@ def main():
     lendo = bool(True)
     soma_pos = int(0)
     soma_neg = int(0)
+    cont_neg = int(0)
 
     # Entrada de dados
     while lendo:
@@ -29,9 +30,10 @@ def main():
                 soma_pos += num
             else:
                 soma_neg += num
+                cont_neg += 1
 
     # Saida de dados
-    print(f'{soma_neg} {soma_pos}')
+    print(f'{soma_neg / cont_neg} {soma_pos}')
 
     return 0
 
