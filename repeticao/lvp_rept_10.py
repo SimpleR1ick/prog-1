@@ -17,7 +17,7 @@ def main():
         num = int(input())
 
         # Procesamento
-        if num < 0:
+        if num > 0:
             soma_pos += num
         else:
             soma_neg += num

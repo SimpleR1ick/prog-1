@@ -10,30 +10,33 @@ informando dados e n quando quiser parar)
 # Função principal
 def main():
     # Variaveis
-    lendo = bool(True)
-    soma_pos = int(0)
-    soma_neg = int(0)
-    cont_neg = int(0)
+    soma_positivos = 0
+    soma_negativos = 0
+    count_negativos = 0
 
     # Entrada de dados
-    while lendo:
-        ler = input().upper()
+    ler = input()
 
-        # Verificando se deve continuar
-        if ler != 's':
-            lendo = False
-        else:
-            num = int(input())
+    while ler.lower() != 'n':
+        numero = int(input())
 
-            # Procesamento
-            if num < 0:
-                soma_pos += num
-            else:
-                soma_neg += num
-                cont_neg += 1
+        # Processamento 1
+        if numero > 0:
+            soma_positivos += numero
+        elif numero < 0:
+            soma_negativos += numero
+            count_negativos += 1
+
+        ler = input()
+
+    # Processamento 2
+    if count_negativos == 0:
+        media_negativos = 0
+    else:
+        media_negativos = int(soma_negativos / count_negativos)
 
     # Saida de dados
-    print(f'{soma_neg / cont_neg} {soma_pos}')
+    print(f'{soma_positivos} {media_negativos}')
 
     return 0
 

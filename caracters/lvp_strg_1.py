@@ -16,11 +16,13 @@ def main():
     # Saida de dados
     if len(string1) == len(string2):
         print("MESMO TAMANHO")
+    else:
+        print("TAMANHO DIFERENTE")
 
     if string1 == string2:
         print("CONTEÚDO IGUAL")
     else:
-        print("CONTEUDO DIFERENTE")
+        print("CONTEÚDO DIFERENTE")
 
     return 0
 

@@ -10,7 +10,7 @@ dados e n quando quiser parar)
 def main():
     # Variaveis
     lendo = True
-    soma = float(0)
+    soma = int(0)
 
     # Entrada de dados
     while lendo:
@@ -19,7 +19,7 @@ def main():
         if ler != 's':
             lendo = False
         else:
-            soma += float(input())
+            soma += int(input())
 
     # Saida de dados
     print(soma)

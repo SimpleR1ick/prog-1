@@ -13,13 +13,14 @@ def main():
     # Variaveis
     maior_altura = menor_altura = None
     soma_altura_mulheres = int(0)
+    quantidade_mulheres = int(0)
     quantidade_homens = int(0)
 
     # Entrada de dados
     for _ in range(5):
-        altura = float(input())
         sexo = input().lower()
-
+        altura = float(input())
+        
         # Verifique a maior e a menor altura.
         if maior_altura is None or altura > maior_altura:
             maior_altura = altura
@@ -29,11 +30,12 @@ def main():
         # Verifique o sexo e atualize os cálculos de acordo.
         if sexo == 'f':
             soma_altura_mulheres += altura
+            quantidade_mulheres += 1
         elif sexo == 'm':
             quantidade_homens += 1
 
     # Procesamento
-    media_altura_mulheres = soma_altura_mulheres / 5
+    media_altura_mulheres = soma_altura_mulheres / quantidade_mulheres
 
     # Saida de dados
     print(maior_altura)
