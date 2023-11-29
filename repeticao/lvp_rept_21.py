@@ -13,13 +13,51 @@ usuário,
 # Função principal
 def main():
     # Variaveis
+    num1 = num2 = float()
+    resultado = float()
+    operacao = str()
+    calcular = str()
 
     # Entrada de dados
+    calcular = input()
 
     # Procesamento
+    while calcular.lower() == 's':
+        # Solicitar a operação desejada
+        operacao = input()
 
-    # Saida de dados
+        # Solicitar dois valores ao usuário
+        num1 = float(input())
+        num2 = float(input())
+        
+        # Verificar a escolha do usuário e realizar a operação correspondente
+        if operacao == '1':
+            resultado = num1 + num2
+            
+        elif operacao == '2':
+            resultado = num1 - num2
+            
+        elif operacao == '3':
+            resultado = num1 * num2
+            
+        elif operacao == '4':
+            resultado = num1 / num2  
+           
+        elif operacao == '5':
+            resultado = num1 ** num2
+         
+        elif operacao == '6':     
+            resultado = num1 ** (1 / num2)
+    
+        else:
+            print("OPERACAO INVALIDA")
 
+        # Saida de dados
+        print(resultado)
+        
+        calcular = input()
+
+    
     return 0
 
 if __name__ == "__main__":
