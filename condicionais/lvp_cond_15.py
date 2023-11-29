@@ -9,21 +9,17 @@ terminar no dia seguinte.
 
 # Função principal
 def main():
-    # Variaveis
-    total = int()
-
     # Entrada de dados
     inicio = int(input())
     fim = int(input())
 
-    # Processamento
-    if inicio > fim:
-        total += 24
-
-    duracao = fim - inicio
-
-    if duracao > 24:
+    # Calcula a duração do jogo
+    if fim > inicio:
+        duracao = fim - inicio
+    elif fim == inicio:
         duracao = 24
+    else:
+        duracao = (24 - inicio) + fim
     
     # Saida de dados
     print(duracao)

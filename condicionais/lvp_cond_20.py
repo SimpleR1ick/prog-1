@@ -42,8 +42,7 @@ def main():
     produto_idades = homem_mais_novo * mulher_mais_velha
 
     # Saida de dados
-    print(soma_idades)
-    print(produto_idades)
+    print(f"{soma_idades} {produto_idades}")
 
     return 0
 

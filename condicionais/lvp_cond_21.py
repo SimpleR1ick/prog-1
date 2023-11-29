@@ -23,34 +23,34 @@ def main():
 
     # Entrada de dados
     opcao = int(input())
-    num1 = float(input())
-    num2 = float(input())
 
-    # Procesamento
-    match opcao:
-        case 1:  # Soma
+    if not 1 <= opcao <= 6:
+        print('OPERACAO INVALIDA')
+    else:
+        num1 = float(input())
+        num2 = float(input())
+
+        # Procesamento
+        if opcao == 1:  # Soma
             total = num1 + num2
 
-        case 2:  # Subtração
+        elif opcao == 2:  # Subtração
             total = num1 - num2
 
-        case 3:  # Multiplicação
+        elif opcao == 3:  # Multiplicação
             total = num1 * num2
 
-        case 4:  # Divisão
+        elif opcao == 4:  # Divisão
             total = num1 / num2
 
-        case 5:  # Potência
+        elif opcao == 5:  # Potência
             total = num1 ** num2
 
-        case 6:  # Raiz
+        elif opcao == 6:  # Raiz
             total = num1 ** (1 / num2)
 
-        case _:
-            print('OPERACAO INVALIDA')
-
-    # Saida de dados
-    print(total)
+        # Saida de dados
+        print(total)
 
     return 0
 

@@ -12,7 +12,10 @@ senão escrever a mensagem 'EFETUAR COMPRA'.
 # Função principal
 def main():
     # Variaveis
-    atual, maxima, minima, media = int()
+    atual = int()
+    maxima = int()
+    minima = int()
+    media = int()
 
     # Entrada de dados
     atual = int(input())

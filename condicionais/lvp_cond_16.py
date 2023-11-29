@@ -28,7 +28,7 @@ def main():
         horas_extras = horas_trabalhadas - jornada_mensal
 
     # Calcular o salário total, incluindo horas extras (se houver)
-    salario_extra = horas_extras * salario_por_hora * 1.5
+    salario_extra = (horas_extras * salario_por_hora) * 1.5
     salario_total = (jornada_mensal * salario_por_hora) + salario_extra
 
     # Saida de dados

@@ -37,7 +37,7 @@ def main():
         print(-b / (2*a))
 
     else:
-        print("Raiz não real")
+        print("Não possui raiz")
 
     return 0
 

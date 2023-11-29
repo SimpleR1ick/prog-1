@@ -37,7 +37,9 @@ def main():
             desconto = 0.06
 
     # Saida de dados
-    print(total - (total * desconto))
+    total = total - (total * desconto)
+
+    print(f"{total:.2f}")
     
 
     return 0

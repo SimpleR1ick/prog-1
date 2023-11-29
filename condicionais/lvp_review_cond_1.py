@@ -25,9 +25,9 @@ def main():
 
     # Saida de dados
     if invertido == num:
-        print('É UMA CAPICUA')
+        print(f'{num} É UMA CAPICUA')
     else:
-        print('NÃO É UMA CAPICUA')
+        print(f'{num} NÃO É UMA CAPICUA')
 
     return 0
 
