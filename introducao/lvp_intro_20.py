@@ -28,7 +28,7 @@ def main():
     tempo = tamanho / velocidade
 
     # Saida de dados
-    print(tempo)
+    print(f"{tempo} segundos")
 
     return 0
 
